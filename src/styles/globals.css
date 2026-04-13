@@ -3,27 +3,38 @@
 @import './tokens.css';
 @import './typography-utilities.css';
 
-/* Brand fonts — Big Caslon: system stack. Ano (MNN): add licensed .woff2 under public/fonts (see public/fonts/README.md); Outfit loads as fallback. */
-/* Ano: uses local() if installed; add optional url() in your build when hosting licensed .woff2 (see public/fonts/README.md). */
+/*
+ * Ano (MNN / MYKA): proxied via /myka-fonts/* (next.config rewrites) so fonts load same-origin.
+ * Family name "Ano MYKA" avoids a system font named "Ano" winning over these @font-face rules.
+ */
 @font-face {
-  font-family: 'Ano';
-  src: local('Ano Regular');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Ano';
-  src: local('Ano Bold');
+  font-family: 'Ano MYKA';
+  src: url(/myka-fonts/AnoBold.woff) format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Ano';
-  src: local('Ano Medium');
+  font-family: 'Ano MYKA';
+  src: url(/myka-fonts/AnoHalf.woff) format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ano MYKA';
+  src: url(/myka-fonts/AnoRegular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* MNN tokens use font-weight 500 in places; map to Regular so the face resolves. */
+@font-face {
+  font-family: 'Ano MYKA';
+  src: url(/myka-fonts/AnoRegular.woff) format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;

@@ -180,6 +180,12 @@ function typographyDisplayName(variant: string): string {
 
 const TYPOGRAPHY_PREVIEW = 'The quick brown fox jumps over the lazy dog';
 
+function typographyPreviewText(variant: string): string {
+  if (variant === 'button') return 'ADD TO BAG';
+  if (variant === 'links') return 'Continue Shopping';
+  return TYPOGRAPHY_PREVIEW;
+}
+
 const TYPOGRAPHY_ROWS: { variant: string; label?: string }[] = [
   ...Array.from({ length: 12 }, (_, i) => ({ variant: `headline${i + 1}` })),
   { variant: 'text1', label: 'text1 (default)' },
@@ -279,7 +285,7 @@ export default function DesignSystemPage() {
                       {label ?? typographyDisplayName(variant)}
                     </span>
                     <div className={styles.typographyPreviewCol}>
-                      <div className={`typography-${variant}`}>{TYPOGRAPHY_PREVIEW}</div>
+                      <div className={`typography-${variant}`}>{typographyPreviewText(variant)}</div>
                     </div>
                     {rule ? (
                       <div className={styles.typographyCssCol}>

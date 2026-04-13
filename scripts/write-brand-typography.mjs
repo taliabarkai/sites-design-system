@@ -315,8 +315,8 @@ const brands = {
     }),
     button: rule({
       fontFamily: FF.akatab,
-      sizePx: 14,
-      lhPx: 17,
+      sizePx: 16,
+      lhPx: 18,
       fontWeight: '600',
       letterSpacing: 0.7,
       textTransform: 'uppercase',

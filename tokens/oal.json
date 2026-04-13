@@ -197,8 +197,8 @@
     },
     "button": {
       "fontFamily": "\"Akatab\", system-ui, sans-serif",
-      "fontSize": "0.875rem",
-      "lineHeight": "1.0625rem",
+      "fontSize": "1rem",
+      "lineHeight": "1.125rem",
       "fontWeight": "600",
       "letterSpacing": "0.04375rem",
       "textTransform": "uppercase"

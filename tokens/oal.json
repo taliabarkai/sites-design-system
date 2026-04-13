@@ -212,12 +212,12 @@
     },
     "ribbons": {
       "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
-      "fontSize": "0.875rem",
-      "lineHeight": "0.875rem",
+      "fontSize": "1.25rem",
+      "lineHeight": "1.25rem",
       "fontWeight": "400",
       "textTransform": "uppercase",
-      "fontSizeMobile": "0.75rem",
-      "lineHeightMobile": "0.75rem"
+      "fontSizeMobile": "1rem",
+      "lineHeightMobile": "1rem"
     }
   },
   "colors": {

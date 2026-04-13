@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Heading, Text } from '@/components';
+import { Heading } from '@/components';
 import styles from './page.module.css';
 import ibTokens from '../../tokens/ib.json';
 import lalTokens from '../../tokens/lal.json';
@@ -152,14 +152,6 @@ const THEME_TYPOGRAPHY: Record<Theme, Record<string, TypographyRule>> = {
   mnn: mnnTokens.typography as Record<string, TypographyRule>,
 };
 
-const THEME_COLORS: Record<Theme, Record<string, string>> = {
-  oal: oalTokens.colors as Record<string, string>,
-  lal: lalTokens.colors as Record<string, string>,
-  ib: ibTokens.colors as Record<string, string>,
-  tgr: tgrTokens.colors as Record<string, string>,
-  mnn: mnnTokens.colors as Record<string, string>,
-};
-
 function typographyDisplayName(variant: string): string {
   if (variant === 'button') return 'Button';
   if (variant === 'links') return 'Links';
@@ -183,6 +175,7 @@ const TYPOGRAPHY_PREVIEW = 'The quick brown fox jumps over the lazy dog';
 function typographyPreviewText(variant: string): string {
   if (variant === 'button') return 'ADD TO BAG';
   if (variant === 'links') return 'Continue Shopping';
+  if (variant === 'ribbons') return '20% OFF';
   return TYPOGRAPHY_PREVIEW;
 }
 
@@ -225,11 +218,10 @@ function brandTypographyStylesTitle(theme: Theme): string {
 
 export default function DesignSystemPage() {
   const [theme, setTheme] = useState<Theme>('oal');
-  const [activeTab, setActiveTab] = useState('typography');
 
   return (
     <div className={styles.container} data-theme={theme}>
-      {/* One sticky chrome block (title + brands + tabs) so main never stacks above it and steals clicks. */}
+      {/* One sticky chrome block (title + brands) so main never stacks above it and steals clicks. */}
       <header className={styles.siteChrome}>
         <div className={styles.headerInner}>
           <Heading level={1} className={styles.headerTitle}>
@@ -249,91 +241,50 @@ export default function DesignSystemPage() {
             ))}
           </div>
         </div>
-        <nav className={styles.nav} aria-label="Design system sections">
-          {['typography', 'colors'].map((tab) => (
-            <button
-              key={tab}
-              type="button"
-              onClick={() => setActiveTab(tab)}
-              className={`${styles.navButton} ${activeTab === tab ? styles.navActive : ''}`}
-            >
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
-            </button>
-          ))}
-        </nav>
       </header>
 
       {/* Scroll lives here only — chrome stays out of the scroll stack so brand tabs always receive clicks. */}
       <div className={styles.pageScroll}>
       <main className={styles.main}>
-        {/* Typography Section */}
-        {activeTab === 'typography' && (
-          <section className={styles.section}>
-            <h2 className={`${styles.sectionTitle} ${styles.chromeUiFont}`}>
-              {brandTypographyStylesTitle(theme)}
-            </h2>
+        <section className={styles.section}>
+          <h2 className={`${styles.sectionTitle} ${styles.chromeUiFont}`}>
+            {brandTypographyStylesTitle(theme)}
+          </h2>
 
-            <ul className={styles.typographyList}>
-              {TYPOGRAPHY_ROWS.map(({ variant, label }) => {
-                const rule = THEME_TYPOGRAPHY[theme][variant];
-                return (
-                  <li
-                    key={variant}
-                    className={`${styles.typographyListItem} ${rule ? styles.typographyListItemWithCss : ''}`}
-                  >
-                    <span className={styles.typographyRuleName}>
-                      {label ?? typographyDisplayName(variant)}
-                    </span>
-                    <div className={styles.typographyPreviewCol}>
-                      <div className={`typography-${variant}`}>{typographyPreviewText(variant)}</div>
-                    </div>
-                    {rule ? (
-                      <div className={styles.typographyCssCol}>
-                        <details className={styles.typographyCssDetails}>
-                          <summary
-                            className={`${styles.typographyCssSummary} ${styles.chromeUiFont}`}
-                          >
-                            CSS Typography Rules
-                          </summary>
-                          <pre className={styles.typographyCssPre}>
-                            <code>{buildTypographyCssSnippet(variant, rule)}</code>
-                          </pre>
-                          <TypographyPxReference rule={rule} />
-                        </details>
-                      </div>
-                    ) : null}
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
-        )}
-
-        {/* Colors Section */}
-        {activeTab === 'colors' && (
-          <section className={styles.section}>
-            <h2 className={`${styles.sectionTitle} ${styles.chromeUiFont}`}>Color Palette</h2>
-            <Text variant="paragraph1">Theme colors for {theme.toUpperCase()}</Text>
-
-            <div className={styles.colorGrid}>
-              {['primary', 'secondary', 'accent', 'success', 'warning', 'danger', 'info'].map((color) => (
-                <div key={color} className={styles.colorItem}>
-                  <div
-                    className={styles.colorSwatch}
-                    style={{ backgroundColor: `var(--color-${color})` }}
-                  />
-                  <Text variant="text3" className={styles.colorName}>
-                    <strong>{color}</strong>
-                  </Text>
-                  <div className={styles.colorCodeBlock}>
-                    <code className={styles.colorCode}>--color-{color}</code>
-                    <span className={styles.colorHex}>{THEME_COLORS[theme][color]}</span>
+          <ul className={styles.typographyList}>
+            {TYPOGRAPHY_ROWS.map(({ variant, label }) => {
+              const rule = THEME_TYPOGRAPHY[theme][variant];
+              return (
+                <li
+                  key={variant}
+                  className={`${styles.typographyListItem} ${rule ? styles.typographyListItemWithCss : ''}`}
+                >
+                  <span className={styles.typographyRuleName}>
+                    {label ?? typographyDisplayName(variant)}
+                  </span>
+                  <div className={styles.typographyPreviewCol}>
+                    <div className={`typography-${variant}`}>{typographyPreviewText(variant)}</div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+                  {rule ? (
+                    <div className={styles.typographyCssCol}>
+                      <details className={styles.typographyCssDetails}>
+                        <summary
+                          className={`${styles.typographyCssSummary} ${styles.chromeUiFont}`}
+                        >
+                          CSS Typography Rules
+                        </summary>
+                        <pre className={styles.typographyCssPre}>
+                          <code>{buildTypographyCssSnippet(variant, rule)}</code>
+                        </pre>
+                        <TypographyPxReference rule={rule} />
+                      </details>
+                    </div>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       </main>
 
       <footer className={`${styles.footer} ${styles.chromeUiFont}`}>

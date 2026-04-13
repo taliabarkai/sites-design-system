@@ -56,9 +56,10 @@ function generateThemeCss(theme: Theme): string {
     });
   });
 
-  // Colors
+  // Colors (kebab-case names so they match var(--color-text-secondary) etc. in CSS)
   Object.entries(theme.colors).forEach(([colorName, colorValue]) => {
-    const cssVar = `--color-${colorName}`;
+    const kebabName = toKebabCase(colorName);
+    const cssVar = `--color-${kebabName}`;
     css += `  ${cssVar}: ${colorValue};\n`;
   });
 

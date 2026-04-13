@@ -1,6 +1,9 @@
-/* Brand fonts — Big Caslon: system stack. Ano (MNN): add licensed .woff2 under public/fonts (see public/fonts/README.md); Outfit loads as fallback. */
+/* All @import rules must come before any other rules (CSS spec). */
 @import url('https://fonts.googleapis.com/css2?family=Akatab:wght@400;600;700&family=Assistant:ital,wght@0,300;0,400;0,600;0,700&family=Bebas+Neue&family=Lato:wght@300;400;700&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap');
+@import './tokens.css';
+@import './typography-utilities.css';
 
+/* Brand fonts — Big Caslon: system stack. Ano (MNN): add licensed .woff2 under public/fonts (see public/fonts/README.md); Outfit loads as fallback. */
 /* Ano: uses local() if installed; add optional url() in your build when hosting licensed .woff2 (see public/fonts/README.md). */
 @font-face {
   font-family: 'Ano';
@@ -25,10 +28,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* Generated tokens from tokens/ directory */
-@import './tokens.css';
-@import './typography-utilities.css';
 
 /* ============================================
    Reset & Base Styles

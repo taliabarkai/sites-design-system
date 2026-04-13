@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   error?: string;
   helperText?: string;
@@ -48,7 +48,7 @@ export const Input: React.FC<InputProps> = ({
 Input.displayName = 'Input';
 
 // Textarea Component
-interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   error?: string;
   helperText?: string;
@@ -96,7 +96,7 @@ export const Textarea: React.FC<TextareaProps> = ({
 Textarea.displayName = 'Textarea';
 
 // Select Component
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   label?: string;
   error?: string;
   helperText?: string;
@@ -152,7 +152,7 @@ export const Select: React.FC<SelectProps> = ({
 Select.displayName = 'Select';
 
 // Checkbox Component
-interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
 }
 
@@ -182,7 +182,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
 Checkbox.displayName = 'Checkbox';
 
 // Radio Component
-interface RadioProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface RadioProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
 }
 

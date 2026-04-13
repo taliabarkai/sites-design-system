@@ -1,7 +1,7 @@
 {
   "name": "@multi-brand/design-system",
   "version": "2.0.0",
-  "description": "Comprehensive multi-brand design system supporting 6 brands with complete component library",
+  "description": "Multi-brand design system: OAL, LAL, IB, TGR, MNN",
   "license": "MIT",
   "scripts": {
     "dev": "npm run generate-tokens && next dev",
@@ -15,7 +15,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "next": "^15.0.0"
+    "next": "latest"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

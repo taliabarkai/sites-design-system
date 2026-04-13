@@ -1,10 +1,10 @@
 # 🎨 Multi-Brand Design System
 
-A comprehensive, production-ready design system supporting **6 brands** (Oak, Luna, LAL, IB, TGR, MNN) with a complete component library built with Next.js, TypeScript, and deployed on Vercel.
+A production-ready design system supporting **five brands** — **OAL** (Oak & Luna), **LAL** (Lime & Lou), **IB** (Israel Blessing), **TGR** (Theo Grace), **MNN** (MYKA) — with Next.js, TypeScript, and Vercel deployment.
 
 ## 🎯 Features
 
-✅ **6 Complete Brand Themes** — Oak, Luna, LAL, IB, TGR, MNN  
+✅ **5 brand themes** — OAL, LAL, IB, TGR, MNN  
 ✅ **40+ Components** — Buttons, Cards, Forms, Layouts, Alerts, Badges  
 ✅ **Design Tokens** — Typography, Colors, Spacing, Shadows, Transitions  
 ✅ **Responsive** — Mobile-first, works on all devices  
@@ -16,14 +16,13 @@ A comprehensive, production-ready design system supporting **6 brands** (Oak, Lu
 
 ## 📦 Included Brands
 
-| Brand | Theme | Focus |
-|-------|-------|-------|
-| **Oak** | Refined, elegant | Premium positioning |
-| **Luna** | Modern, vibrant | Contemporary style |
-| **LAL** | Contemporary | Clean aesthetic |
-| **IB** | Premium, sophisticated | Luxury market |
-| **TGR** | Bold, energetic | High-energy brands |
-| **MNN** | Modern, dynamic | Tech-forward |
+| Code | Full name | Focus |
+|------|-----------|-------|
+| **OAL** | Oak & Luna | Refined editorial + modern clarity |
+| **LAL** | Lime & Lou | Bright, approachable |
+| **IB** | Israel Blessing | Premium, sophisticated |
+| **TGR** | Theo Grace | Bold, energetic |
+| **MNN** | MYKA | Modern, dynamic |
 
 ## 🚀 Quick Start
 
@@ -41,7 +40,7 @@ npm run dev
 http://localhost:3000
 ```
 
-You'll see the interactive design system with all 6 brands and complete component library.
+You'll see the interactive design system with all five brands and the component library.
 
 ### 3. Deploy to Vercel
 
@@ -55,12 +54,11 @@ git push origin main
 ```
 comprehensive-design-system/
 ├── tokens/
-│   ├── oak.json          # Oak brand
-│   ├── luna.json         # Luna brand
-│   ├── lal.json          # LAL brand
-│   ├── ib.json           # IB brand
-│   ├── tgr.json          # TGR brand
-│   ├── mnn.json          # MNN brand
+│   ├── oal.json          # OAL (Oak & Luna)
+│   ├── lal.json          # LAL (Lime & Lou)
+│   ├── ib.json           # IB (Israel Blessing)
+│   ├── tgr.json          # TGR (Theo Grace)
+│   ├── mnn.json          # MNN (MYKA)
 │   └── shared.json       # Shared tokens
 │
 ├── src/
@@ -186,16 +184,16 @@ export default function Page() {
 ## 🌐 Theme Switching
 
 ```typescript
-<div data-theme="oak">
-  <p class="typography-headline1">Oak Brand</p>
+<div data-theme="oal">
+  <p class="typography-headline1">OAL (Oak & Luna)</p>
 </div>
 
-<div data-theme="luna">
-  <p class="typography-headline1">Luna Brand</p>
+<div data-theme="lal">
+  <p class="typography-headline1">LAL (Lime & Lou)</p>
 </div>
 ```
 
-All 6 themes available: `oak`, `luna`, `lal`, `ib`, `tgr`, `mnn`
+Themes: `oal`, `lal`, `ib`, `tgr`, `mnn`
 
 ## 🛠️ Commands
 

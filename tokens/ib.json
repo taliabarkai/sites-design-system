@@ -1,0 +1,82 @@
+{
+  "theme": "ib",
+  "description": "IB brand - Premium and sophisticated",
+  "typography": {
+    "headline1": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "2.9rem",
+      "lineHeight": "3.4rem",
+      "letterSpacing": "0.15rem",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    "headline2": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "2.2rem",
+      "lineHeight": "2.8rem",
+      "letterSpacing": "0.08rem",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    "headline3": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "2rem",
+      "lineHeight": "2.6rem",
+      "letterSpacing": "0.06rem",
+      "fontWeight": "700"
+    },
+    "text1": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.4rem",
+      "lineHeight": "1.9rem",
+      "letterSpacing": "0.04rem",
+      "fontWeight": "400"
+    },
+    "text2": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.4rem",
+      "lineHeight": "1.9rem",
+      "letterSpacing": "0.04rem",
+      "fontWeight": "700"
+    },
+    "text3": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.2rem",
+      "lineHeight": "1.6rem",
+      "fontWeight": "400"
+    },
+    "body1": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.5rem",
+      "lineHeight": "2rem",
+      "letterSpacing": "0.03rem",
+      "fontWeight": "400"
+    },
+    "button1": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.3rem",
+      "lineHeight": "1.7rem",
+      "letterSpacing": "0.08rem",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    "caption1": {
+      "fontFamily": "Helvetica Neue",
+      "fontSize": "1.1rem",
+      "lineHeight": "1.5rem",
+      "fontWeight": "400"
+    }
+  },
+  "colors": {
+    "primary": "#0a0a0a",
+    "secondary": "#fafafa",
+    "accent": "#b8860b",
+    "success": "#2d9966",
+    "warning": "#ff9800",
+    "danger": "#d32f2f",
+    "info": "#1976d2",
+    "text": "#0a0a0a",
+    "textSecondary": "#5a5a5a",
+    "border": "#d4d4d4"
+  }
+}

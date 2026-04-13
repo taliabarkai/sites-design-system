@@ -1,0 +1,27 @@
+{
+  "name": "@multi-brand/design-system",
+  "version": "2.0.0",
+  "description": "Comprehensive multi-brand design system supporting 6 brands with complete component library",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run generate-tokens && next dev",
+    "dev:3001": "npm run generate-tokens && next dev -p 3001",
+    "build": "npm run generate-tokens && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "generate-tokens": "ts-node scripts/generate-css.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1"
+  }
+}

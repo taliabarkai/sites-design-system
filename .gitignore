@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Build / generated (regenerate with npm run generate-tokens)
+# Keep tokens.css if you prefer committing it; uncomment to ignore:
+# src/styles/tokens.css
+
+# Testing
+coverage/
+
+# Environment
+.env
+.env*.local
+
+# Debug / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel

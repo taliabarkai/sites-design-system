@@ -217,17 +217,17 @@
       "textTransform": "uppercase"
     },
     "button2": {
-      "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontFamily": "\"Akatab\", system-ui, sans-serif",
       "fontSize": "0.875rem",
       "lineHeight": "1.125rem",
-      "fontWeight": "300",
-      "letterSpacing": "0.025rem"
+      "fontWeight": "600"
     },
     "links": {
-      "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "fontFamily": "\"Akatab\", system-ui, sans-serif",
       "fontSize": "0.875rem",
       "lineHeight": "1.125rem",
-      "fontWeight": "400",
+      "fontWeight": "600",
+      "textTransform": "uppercase",
       "textDecoration": "underline"
     },
     "ribbons": {

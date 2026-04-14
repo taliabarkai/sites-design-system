@@ -307,10 +307,11 @@ const brands = {
       textTransform: 'uppercase',
     }),
     links: rule({
-      fontFamily: FF.helveticaLight,
+      fontFamily: FF.akatab,
       sizePx: 14,
       lhPx: 18,
-      fontWeight: '500',
+      fontWeight: '600',
+      textTransform: 'uppercase',
       textDecoration: 'underline',
     }),
     ribbons: rule({

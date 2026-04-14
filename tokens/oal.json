@@ -3,7 +3,7 @@
   "description": "OAL (Oak and Luna) — refined editorial with modern clarity",
   "typography": {
     "headline1": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "5rem",
       "lineHeight": "4.5rem",
       "fontWeight": "400",
@@ -11,7 +11,7 @@
       "lineHeightMobile": "2.6875rem"
     },
     "headline2": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "60px",
       "lineHeight": "3.375rem",
       "fontWeight": "400",
@@ -19,7 +19,7 @@
       "lineHeightMobile": "2.025rem"
     },
     "headline3": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "48px",
       "lineHeight": "2.7rem",
       "fontWeight": "400",
@@ -27,7 +27,7 @@
       "lineHeightMobile": "1.8rem"
     },
     "headline4": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "36px",
       "lineHeight": "2.025rem",
       "fontWeight": "400",
@@ -35,7 +35,7 @@
       "lineHeightMobile": "2.025rem"
     },
     "headline5": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "1.5rem",
       "lineHeight": "1.35rem",
       "fontWeight": "400"
@@ -75,7 +75,7 @@
       "fontWeight": "600"
     },
     "headline11": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "2rem",
       "lineHeight": "1.8125rem",
       "fontWeight": "400",
@@ -83,7 +83,7 @@
       "lineHeightMobile": "1.375rem"
     },
     "headline12": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "1.5rem",
       "lineHeight": "1.35rem",
       "fontWeight": "400"
@@ -231,7 +231,7 @@
       "textDecoration": "underline"
     },
     "ribbons": {
-      "fontFamily": "\"Bebas Neue\", Impact, sans-serif",
+      "fontFamily": "\"Bebas Neue\", sans-serif",
       "fontSize": "1.25rem",
       "lineHeight": "1.25rem",
       "fontWeight": "400",

@@ -54,7 +54,7 @@ function rule({
 const FF = {
   bigCaslon: '"Big Caslon", "Didot", "Libre Caslon Text", Georgia, serif',
   lato: '"Lato", system-ui, sans-serif',
-  bebas: '"Bebas Neue", Impact, sans-serif',
+  bebas: '"Bebas Neue", sans-serif',
   akatab: '"Akatab", system-ui, sans-serif',
   helveticaLight: '"Helvetica Neue", Helvetica, Arial, sans-serif',
   helveticaReg: '"Helvetica Neue", Helvetica, Arial, sans-serif',
